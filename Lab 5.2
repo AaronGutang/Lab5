@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float x1, x2, x3, resAC, resBC, resSUM;
+    printf("Введите координаты точки A через пробел: ");
+    scanf("%f", &x1);
+    printf("Введите координаты точки B через пробел: ");
+    scanf("%f", &x2);
+    printf("Введите координаты точки С через пробел: ");
+    scanf("%f", &x3);
+    resAC = fabs(x1 - x3);
+    resBC = fabs(x2 - x3);
+    resSUM = resAC + resBC;
+    printf("Длина отрезка АС равна: %f      Длина отрезка BC равна: %f      Сумма длин этих отрезков: %f", resAC, resBC,resSUM);
+    return 0;
+}
